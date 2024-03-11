@@ -1,0 +1,44 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: Projet-IOT-2024_4
+label: Projet-IOT-2024_4
+description: |
+  This example project shows an empty configuration that can be used as a starting point to add components and functionality.
+category: Example|Platform
+filter:
+- name: Device Type
+  value: [SoC]
+- name: MCU
+  value: [32-bit MCU]
+- name: Project Difficulty
+  value: [Beginner]
+package: platform
+quality: production
+source:
+- {path: app.c}
+- {path: main.c}
+include:
+- path: ''
+  file_list:
+  - {path: app.h}
+sdk: {id: gecko_sdk, version: 4.2.3}
+toolchain_settings: []
+component:
+- instance: [vcom]
+  id: uartdrv_usart
+- {id: sl_system}
+- instance: [btn0]
+  id: simple_button
+- {id: si7210_driver}
+- {id: si1133_driver}
+- instance: [vcom]
+  id: iostream_usart
+- {id: si70xx_driver}
+- instance: [led0]
+  id: simple_led
+- {id: device_init}
+- {id: brd4184a}
+- {id: EFR32BG22C224F512IM40}
+define:
+- {name: DEBUG_EFM}
+ui_hints: {}
+

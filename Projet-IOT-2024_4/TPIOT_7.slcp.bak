@@ -1,0 +1,39 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: TPIOT_7
+label: TPIOT_7
+description: |
+  This example project shows an empty configuration that can be used as a starting point to add components and functionality.
+category: Example|Platform
+filter:
+- name: Device Type
+  value: [SoC]
+- name: MCU
+  value: [32-bit MCU]
+- name: Project Difficulty
+  value: [Beginner]
+package: platform
+quality: production
+source:
+- {path: app.c}
+- {path: main.c}
+include:
+- path: ''
+  file_list:
+  - {path: app.h}
+sdk: {id: gecko_sdk, version: 4.2.1}
+toolchain_settings: []
+component:
+- {id: sensor_lux}
+- {id: sl_system}
+- {id: si1133_driver}
+- instance: [vcom]
+  id: iostream_usart
+- {id: sensor_imu}
+- {id: device_init}
+- {id: brd4184a}
+- {id: sensor_rht}
+- {id: EFR32BG22C224F512IM40}
+define:
+- {name: DEBUG_EFM}
+ui_hints: {}
+
