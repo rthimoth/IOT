@@ -276,6 +276,16 @@
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_usart.c</locationURI>
 		</link>
 		<link>
+			<name>gecko_sdk_4.2.3/hardware/driver/icm20648/inc/sl_icm20648.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/hardware/driver/icm20648/inc/sl_icm20648.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.2.3/hardware/driver/icm20648/src/sl_icm20648.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/hardware/driver/icm20648/src/sl_icm20648.c</locationURI>
+		</link>
+		<link>
 			<name>gecko_sdk_4.2.3/hardware/driver/si1133/inc/sl_si1133.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/hardware/driver/si1133/inc/sl_si1133.h</locationURI>

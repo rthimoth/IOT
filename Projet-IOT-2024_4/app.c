@@ -46,6 +46,7 @@
 #include "sl_si1133.h"
 #include "sl_i2cspm_instances.h"
 #include "sl_si7210.h"
+#include "sl_icm20648.h"
 
 void app_init(void)
 {
@@ -84,11 +85,13 @@ void app_process_action(void)
     // Les données de température sont souvent en milli-degrés, donc divisez par 1000 si nécessaire.
     // Les données d'humidité sont souvent en dix-milli-pourcent, donc divisez par 10000 si nécessaire.
       char string[256];
-      sprintf(string, "température %d \n\r", temp_data);
+      sprintf(string, "température %d.%d%°\n\r", temp_data / 1000);
       USART_Printf(string);
       char string1[256];
-      sprintf(string1, " humidité %d \n\r", rh_data);
+      sprintf(string1, " humidité %d.%d%%\n\r", rh_data / 1000);
       USART_Printf(string1);
+
+
 
       sl_si1133_init(sl_i2cspm_sensor);
 
@@ -98,8 +101,10 @@ void app_process_action(void)
 
        sl_si1133_measure_lux_uvi(sl_i2cspm_sensor, &lux, &uvi);
        char string2[256];
-       sprintf(string2, " light %d \n\r", rh_data);
+       sprintf(string2, " light %d \n\r", (int)lux);
        USART_Printf(string2);
+
+
 
 
        float mTdata;
@@ -107,14 +112,31 @@ void app_process_action(void)
          sl_si7210_init(sl_i2cspm_sensor);
          sl_si7210_measure(sl_i2cspm_sensor, 10000, &mTdata);
        char string3[256];
-       sprintf(string3, " hall effect %d \n\r", mTdata);
+       sprintf(string3, " hall effect %d \n\r", (int)mTdata * 100);
        USART_Printf(string3);
 
-       char string4[256];
-       sprintf(string4, " inertial sensor %d \n\r", mTdata);
-       USART_Printf(string4);
+       sl_icm20648_init();
 
+       //void Accel(void){
+
+         float accel[3];
+
+         sl_icm20648_accel_read_data(&accel);
+
+         char acceleration[256];
+         char acceleration1[256];
+         char acceleration2[256];
+         accel[0] *= 100;
+         accel[1] *= 100;
+         accel[2] *= 100;
+         sprintf(acceleration, "Acceleration : %d \n\r", (int)accel[0]);
+         sprintf(acceleration1, "Acceleration : %d \n\r", (int)accel[1]);
+         sprintf(acceleration2, "Acceleration : %d \n\r", (int)accel[2]);
+         USART_Printf(acceleration);
+         USART_Printf(acceleration1);
+         USART_Printf(acceleration2);
 }
+//}
 
 
 

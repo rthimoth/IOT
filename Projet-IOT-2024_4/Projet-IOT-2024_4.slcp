@@ -33,6 +33,7 @@ component:
 - instance: [vcom]
   id: iostream_usart
 - {id: si70xx_driver}
+- {id: icm20648_driver}
 - instance: [led0]
   id: simple_led
 - {id: device_init}

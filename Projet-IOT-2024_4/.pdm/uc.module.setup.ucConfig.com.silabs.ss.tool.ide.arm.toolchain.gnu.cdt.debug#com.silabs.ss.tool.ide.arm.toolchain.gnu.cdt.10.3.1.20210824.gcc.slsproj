@@ -15,6 +15,7 @@
     <file name="sl_device_init_emu_config.h" generated="true" linked="false"/>
     <file name="sl_i2cspm_sensor_config.h" generated="true" linked="false"/>
     <file name="sl_device_init_hfxo_config.h" generated="true" linked="false"/>
+    <file name="sl_icm20648_config.h" generated="true" linked="false"/>
     <file name="sl_simple_button_config.h" generated="true" linked="false"/>
     <file name="emlib_core_debug_config.h" generated="true" linked="false"/>
     <file name="sl_sleeptimer_config.h" generated="true" linked="false"/>

@@ -20,6 +20,7 @@ Drivers \
 . \
 autogen \
 gecko_sdk_4.2.3/hardware/board/src \
+gecko_sdk_4.2.3/hardware/driver/icm20648/src \
 gecko_sdk_4.2.3/hardware/driver/mx25_flash_shutdown/src/sl_mx25_flash_shutdown_usart \
 gecko_sdk_4.2.3/hardware/driver/si1133/src \
 gecko_sdk_4.2.3/hardware/driver/si70xx/src \

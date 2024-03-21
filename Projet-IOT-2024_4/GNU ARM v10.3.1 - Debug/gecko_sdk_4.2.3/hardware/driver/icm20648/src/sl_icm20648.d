@@ -1,4 +1,5 @@
-app.o: ../app.c \
+gecko_sdk_4.2.3/hardware/driver/icm20648/src/sl_icm20648.o: \
+ C:/Users/timot/SimplicityStudio/SDKs/gecko_sdk_2/hardware/driver/icm20648/src/sl_icm20648.c \
  c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\common\toolchain\inc\sl_gcc_preinclude.h \
  c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_usart.h \
  c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\device\siliconlabs\efr32bg22\include\em_device.h \
@@ -47,8 +48,6 @@ app.o: ../app.c \
  c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\device\siliconlabs\efr32bg22\include\efr32bg22_dma_descriptor.h \
  c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\device\siliconlabs\efr32bg22\include\efr32bg22_ldmaxbar_defines.h \
  C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\autogen/sl_component_catalog.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_eusart.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_eusart_compat.h \
  c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_gpio.h \
  c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\common\inc\sl_assert.h \
  c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_bus.h \
@@ -57,32 +56,15 @@ app.o: ../app.c \
  c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\common\inc\sl_assert.h \
  C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\config/emlib_core_debug_config.h \
  c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\common\inc\sl_enum.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\service\iostream\inc\sli_iostream_uart.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\common\inc\sl_status.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\service\iostream\inc\sl_iostream.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\service\iostream\inc\sl_iostream_uart.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emdrv\dmadrv\inc\dmadrv.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emdrv\common\inc\ecode.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_ldma.h \
- C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\config/dmadrv_config.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_chip.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_system.h \
+ c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_cmu.h \
+ c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_cmu_compat.h \
  c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_gpio.h \
- ../Drivers/USART.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\service\system\inc\sl_system_init.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\driver\leddrv\inc\sl_simple_led.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\driver\leddrv\inc\sl_led.h \
- C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\autogen/sl_simple_led_instances.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\driver\button\inc\sl_simple_button.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\driver\button\inc\sl_button.h \
- C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\autogen/sl_simple_button_instances.h \
- C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\autogen/sl_i2cspm_instances.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\driver\i2cspm\inc\sl_i2cspm.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_i2c.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\hardware\driver\si70xx\inc\sl_si70xx.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\hardware\driver\si1133\inc\sl_si1133.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\hardware\driver\si7210\inc\sl_si7210.h \
- c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\hardware\driver\icm20648\inc\sl_icm20648.h
+ c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\sli_em_cmu.h \
+ c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\service\sleeptimer\inc\sl_sleeptimer.h \
+ C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\config/sl_sleeptimer_config.h \
+ c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\common\inc\sl_status.h \
+ c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\hardware\driver\icm20648\inc\sl_icm20648.h \
+ C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\config/sl_icm20648_config.h
 c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\common\toolchain\inc\sl_gcc_preinclude.h:
 c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_usart.h:
 c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\device\siliconlabs\efr32bg22\include\em_device.h:
@@ -131,8 +113,6 @@ c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\device\siliconlabs\efr
 c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\device\siliconlabs\efr32bg22\include\efr32bg22_dma_descriptor.h:
 c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\device\siliconlabs\efr32bg22\include\efr32bg22_ldmaxbar_defines.h:
 C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\autogen/sl_component_catalog.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_eusart.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_eusart_compat.h:
 c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_gpio.h:
 c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\common\inc\sl_assert.h:
 c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_bus.h:
@@ -141,29 +121,12 @@ c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\common\inc\sl_common.h
 c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\common\inc\sl_assert.h:
 C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\config/emlib_core_debug_config.h:
 c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\common\inc\sl_enum.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\service\iostream\inc\sli_iostream_uart.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\common\inc\sl_status.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\service\iostream\inc\sl_iostream.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\service\iostream\inc\sl_iostream_uart.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emdrv\dmadrv\inc\dmadrv.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emdrv\common\inc\ecode.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_ldma.h:
-C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\config/dmadrv_config.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_chip.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_system.h:
+c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_cmu.h:
+c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_cmu_compat.h:
 c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_gpio.h:
-../Drivers/USART.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\service\system\inc\sl_system_init.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\driver\leddrv\inc\sl_simple_led.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\driver\leddrv\inc\sl_led.h:
-C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\autogen/sl_simple_led_instances.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\driver\button\inc\sl_simple_button.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\driver\button\inc\sl_button.h:
-C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\autogen/sl_simple_button_instances.h:
-C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\autogen/sl_i2cspm_instances.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\driver\i2cspm\inc\sl_i2cspm.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\em_i2c.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\hardware\driver\si70xx\inc\sl_si70xx.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\hardware\driver\si1133\inc\sl_si1133.h:
-c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\hardware\driver\si7210\inc\sl_si7210.h:
+c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\emlib\inc\sli_em_cmu.h:
+c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\service\sleeptimer\inc\sl_sleeptimer.h:
+C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\config/sl_sleeptimer_config.h:
+c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\platform\common\inc\sl_status.h:
 c:\users\timot\simplicitystudio\sdks\gecko_sdk_2\hardware\driver\icm20648\inc\sl_icm20648.h:
+C:\Users\timot\SimplicityStudio\v5_workspace\Projet-IOT-2024_4\config/sl_icm20648_config.h:
